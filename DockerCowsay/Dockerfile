@@ -3,6 +3,6 @@ WORKDIR /usr/src/app
 COPY package*.json cosway.js ./
 RUN npm install
 EXPOSE 8001
-CMD ["node" , "cowsay.js"]
+CMD ["node" , "cosway.js"]
 
 
