@@ -8,7 +8,7 @@ La actividad consiste en :
 2. [Crear una API sencilla con Nodejs que haga que cowsay muestre el mensaje que desee el alumno a través de una petición post o get, se debe instalar  lirerías express y cowsay.](#2-Crear-una-API-sencilla-con-Nodejs-que-haga-que-cowsay-muestre-el-mensaje-que-desee-el-alumno-a-través-de-una-petición-post-o-get,-se-debe-instalar-librerías-express-y-cowsay) 
 3. [Crear un perfil de GitHub.](#3-crear-un-perfil-de-github) 
 4. [Crear un repo personal en GitHub para que aparezca como perfil público.](#4-crear-un-repo-personal-en-GitHub-para-que-aparezca-como-perfil-público)
-5. [Subir a un repo público de GitHub el repositorio creado en el ejercicio 2, acompañado de un simple README.md que contenga una breve descripción e instrucciones para poder usar el código en otra máquina.](#5-Subir-repo-github)
+5. [Subir a un repo público de GitHub el repositorio creado en el ejercicio 2 acompañado de un simple README.md que contenga una breve descripción e instrucciones para poder usar el código en otra máquina](#5-Subir-a-un-repo-público-de-GitHub-el-repositorio-creado-en-el-ejercicio-2-acompañado-de-un-simple-README.md-que contenga-una-breve-descripción-e-instrucciones-para-poder-usar-el-código-en-otra-máquina)
 6. Dockerizar el código creado en el ejercicio 2. 
 7. Realizar un nuevo commit al repositorio de GitHub con los cambios realizados. Añadir al README.md una sección explicando cómo hacer uso de la solución dockerizada. 
 
@@ -101,7 +101,7 @@ console.log('Server started at http://localhost:8001');
  ## 4.  Repo Personal
   Creamos nuestro repo personal para el workshop del Master: [REPO](https://github.com/alyconr/curso-nivelador-Full-Stack.git)
   
-  ## 5.  Instrucciones para Utilizar el Código  en Otra máquina
+ ## 5.  Instrucciones para Utilizar el Código  en Otra máquina
   
   Para poder utilizar el código de la aplicación inicialmente  puedes crear un repo en tu maquina local mediante los siguiente comandos:
   
@@ -142,6 +142,41 @@ console.log('Server started at http://localhost:8001');
   git clone https://github.com/alyconr/curso-nivelador-Full-Stack.git 
   ```
   
+  ## 6. DOCKERIZAR LA SOLUCIÓN
+   
+   Creamos el archivo Dockerfile:
+   
+   ```bash
+   FROM node:14
+WORKDIR /usr/src/app
+COPY package*.json cosway.js ./
+RUN npm install
+EXPOSE 8001
+CMD ["node" , "cosway.js"]
+```
+
+Luego de esto creamos una carpeta dentro de nuestro repo:
+
+```bash
+mkdir DockerCowsay/
+``
+Creamos un .dockerignore agregando las dependencias contenidad en node_modules para finalmente cosntruir la imagen:
+
+``bash
+docker buid -t dockercowsay .
+```
+Finalmente corremos nuestro contenedor:
+
+```bash
+docker run -d -p 8001:8001 dockercosway
+```
+Aqui podemos ver la imágen corriendo en Docker Desktop:
+![Imágen corriendo en Docker Desktop](https://i.imgur.com/uGRkmmS.jpg)
+
+
+
+ 
+
   
 
  
