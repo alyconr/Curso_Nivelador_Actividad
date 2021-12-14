@@ -1,6 +1,6 @@
 # WORKSHOP ACTIVIDAD CURSO NIVELADOR 
 
-Bienvenidos, este es un workshop  doonde se evidencia el manejo de herramientas como Git, GitHub y Docker.
+Bienvenidos, este es un workshop  donde se evidencia el manejo de herramientas como Git, GitHub y Docker.
 
 La actividad consiste en : 
 
