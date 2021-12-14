@@ -101,7 +101,7 @@ console.log('Server started at http://localhost:8001');
  ## 4.  Repo Personal
   Creamos nuestro repo personal para el workshop del Master: [REPO](https://github.com/alyconr/curso-nivelador-Full-Stack.git)
   
-  ## 5.  Instrucciones para Utilizar el Código de nuestra aplicación en Otra máquina
+  ## 5.  Instrucciones para Utilizar el Código  en Otra máquina
   
   Para poder utilizar el código de la aplicación inicialmente  puedes crear un repo en tu maquina local mediante los siguiente comandos:
   
