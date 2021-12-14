@@ -8,7 +8,7 @@ La actividad consiste en :
 2. [Crear una API sencilla con Nodejs que haga que cowsay muestre el mensaje que desee el alumno a través de una petición post o get, se debe instalar  lirerías express y cowsay.](#2-Crear-una-API-sencilla-con-Nodejs-que-haga-que-cowsay-muestre-el-mensaje-que-desee-el-alumno-a-través-de-una-petición-post-o-get,-se-debe-instalar-librerías-express-y-cowsay) 
 3. [Crear un perfil de GitHub.](#3-crear-un-perfil-de-github) 
 4. [Crear un repo personal en GitHub para que aparezca como perfil público.](#4-crear-un-repo-personal-en-GitHub-para-que-aparezca-como-perfil-público)
-5. [Subir a un repo público de GitHub el repositorio creado en el ejercicio 2 acompañado de un simple README.md que contenga una breve descripción e instrucciones para poder usar el código en otra máquina](#5-Subir-a-un-repo-público-de-GitHub-el-repositorio-creado-en-el-ejercicio-2-acompañado-de-un-simple-README.md-que contenga-una-breve-descripción-e-instrucciones-para-poder-usar-el-código-en-otra-máquina)
+5. [Subir a un repo público de GitHub el repositorio creado en el ejercicio 2 acompañado de un simple README.md que contenga una breve descripción e instrucciones para poder usar el código en otra máquina](#5-subir-a-un-repo-público-de-GitHub-el-repositorio-creado-en-el-ejercicio-2-acompañado-de-un-simple-README.md-que contenga-una-breve-descripción-e-instrucciones-para-poder-usar-el-código-en-otra-máquina)
 6. Dockerizar el código creado en el ejercicio 2. 
 7. Realizar un nuevo commit al repositorio de GitHub con los cambios realizados. Añadir al README.md una sección explicando cómo hacer uso de la solución dockerizada. 
 
